@@ -7,10 +7,9 @@ export const Media: CollectionConfig = {
   },
   fields: [
     {
-      name: 'alt',
-      type: 'text',
-      required: true,
+      name: 'owner',
+      type: 'relationship',
+      relationTo: ['users', 'media']
     },
   ],
-  upload: true,
 }
